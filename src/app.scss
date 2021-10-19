@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  background: #141414;
+  color: #fff;
+}
+
+.app {
+  margin-top: 20px;
+
+  button {
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .accept {
+    background: #ffd610;
+    transition: background 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background: #e74c3c;
+      color: #fff;
+
+      .icon-love {
+        color: #fff;
+      }
+    }
+  }
+
+  .cancel {
+    background: #95a5a6;
+    transition: background 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background: #34495e;
+      color: #fff;
+
+      .icon-cry {
+        color: #fff;
+      }
+    }
+  }
+
+  .icon-love {
+    color: #34495e;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+
+  .icon-cry {
+    color: #34495e;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+
+  .icon-heart {
+    color: red;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .inline {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .space-between {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .m-top {
+    margin-top: 300px;
+  }
+}
